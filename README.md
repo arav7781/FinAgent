@@ -1,6 +1,6 @@
-# FinAgent
+![FinAgent — AI startup evaluation and financial advisory](docs/assets/banner.jpg)
 
-**An AI agent platform for startup evaluation and financial advisory.**
+# FinAgent
 
 FinAgent does two things. It runs an investor due-diligence pipeline that reads
 a pitch deck, researches the market, checks the company against the corporate

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 TITLE = "FinAgent"
 SUBTITLE = "An AI Agent Platform for Startup Evaluation and Financial Advisory"
-AUTHOR = "Arav Saxena"
+AUTHOR = "Arav Saxena & Mahi Laddha"
 DOC_DATE = "September 2026"
 REPO_URL = "https://github.com/arav7781/FinAgent"
 

@@ -151,7 +151,7 @@ def draw_body_page(canvas, doc) -> None:
     canvas.drawString(MARGIN, PAGE_HEIGHT - MARGIN + 0.72 * cm,
                       "FinAgent — Project Report")
     canvas.drawRightString(PAGE_WIDTH - MARGIN, PAGE_HEIGHT - MARGIN + 0.72 * cm,
-                           AUTHOR)
+                           DOC_DATE)
     # Footer
     canvas.line(MARGIN, MARGIN - 0.55 * cm, PAGE_WIDTH - MARGIN, MARGIN - 0.55 * cm)
     canvas.setFont("Helvetica", 7.6)

@@ -1,0 +1,33 @@
+# ─── Web service ──────────────────────────────────────────────────────────────
+fastapi>=0.110
+uvicorn[standard]>=0.27
+python-multipart>=0.0.9
+python-socketio>=5.11
+pydantic>=2.6
+requests>=2.31
+
+# ─── LLM orchestration ────────────────────────────────────────────────────────
+langchain-core>=0.3
+langchain-groq>=0.2
+langchain-community>=0.3
+langchain-huggingface>=0.1
+langchain-text-splitters>=0.3
+langgraph>=0.2
+
+# ─── Retrieval ────────────────────────────────────────────────────────────────
+qdrant-client>=1.9
+sentence-transformers>=3.0
+
+# ─── Document conversion ──────────────────────────────────────────────────────
+docling>=2.0
+PyPDF2>=3.0
+pdfplumber>=0.11
+
+# ─── Reporting ────────────────────────────────────────────────────────────────
+reportlab>=4.1
+matplotlib>=3.8
+numpy>=1.26
+
+# ─── External data ────────────────────────────────────────────────────────────
+youtube-search>=2.1
+yt-dlp>=2024.1

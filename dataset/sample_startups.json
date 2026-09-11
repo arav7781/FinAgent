@@ -1,0 +1,50 @@
+[
+  {
+    "name": "QuantumFleet AI",
+    "domain": "Logistics AI",
+    "description": "Route optimisation for mid-size freight fleets. Re-plans loads against live traffic and order data to cut empty-mile running, which is roughly 28% of distance travelled for the target segment.",
+    "team": "Two ex-Flipkart supply-chain engineers and an operations lead who ran a 200-truck regional fleet for six years.",
+    "extras": "Stage: Seed. Team size: 6. Raising $500k at a $4M cap. Four paying pilots, $9k MRR, 11% month-on-month growth.",
+    "_note": "Strong case. Matches the sandbox registry name, so it auto-verifies."
+  },
+  {
+    "name": "LedgerLoom",
+    "domain": "Fintech / SME accounting",
+    "description": "Automated bank reconciliation for small businesses. Matches statement lines to invoices and flags the exceptions an accountant should look at.",
+    "team": "A chartered accountant and two backend engineers. No one has sold to SMEs before.",
+    "extras": "Stage: Pre-seed. 40 unpaid beta users, no revenue. Raising $150k.",
+    "_note": "Mixed case: credible product, unproven commercially."
+  },
+  {
+    "name": "MediScan Diagnostics",
+    "domain": "Healthcare AI",
+    "description": "Chest X-ray triage that flags likely abnormalities for radiologist review. Claims 94% sensitivity on an internal validation set of 12,000 studies.",
+    "team": "A radiologist with 15 years of practice, an ML researcher from IIT Bombay, and a regulatory consultant.",
+    "extras": "Stage: Series A. Deployed in 7 hospitals. Raising $3M. CDSCO approval pending.",
+    "_note": "Regulatory risk is the story; the analyst should surface it."
+  },
+  {
+    "name": "AgriSense Networks",
+    "domain": "Agritech / IoT",
+    "description": "Soil moisture and nutrient sensors with an advisory app for smallholder farms. Hardware is sold at cost; revenue comes from an annual advisory subscription.",
+    "team": "Three agricultural engineers. One previously ran a 400-farmer cooperative.",
+    "extras": "Stage: Seed. 2,300 sensors deployed across Maharashtra. ₹40 lakh ARR. Raising ₹4 crore.",
+    "_note": "Hardware margins and churn are the questions to ask."
+  },
+  {
+    "name": "VaultKey Security",
+    "domain": "Cybersecurity",
+    "description": "Passwordless authentication for mid-market SaaS. A drop-in SDK replacing password login with device-bound passkeys.",
+    "team": "Solo technical founder, ex-security engineer. Actively hiring a co-founder.",
+    "extras": "Stage: Pre-seed. Open-source SDK with 1,800 GitHub stars, no paying customers. Raising $250k.",
+    "_note": "Single-founder and monetisation risk; strong developer signal."
+  },
+  {
+    "name": "NeoCredit Score",
+    "domain": "Fintech / Lending",
+    "description": "Alternative credit scoring for thin-file borrowers using transaction and telecom data. Claims to approve 3x more applicants at the same default rate.",
+    "team": "Two founders from a large NBFC's risk team.",
+    "extras": "Stage: Seed. Claims partnerships with 'multiple leading banks' but names none. Raising $1.2M.",
+    "_note": "Weak case: unverifiable claims. Tests whether the report stays sceptical."
+  }
+]

@@ -1,0 +1,11 @@
+cin,expected_http,expected_status,scenario
+U72900MH2021PTC123456,200,ACTIVE,Well-formed CIN; sandbox resolves it as an active company
+L17110MH1973PLC019786,200,ACTIVE,Listed-company format (leading L) also resolves
+U62010KA2019PTC987654,200,ACTIVE,Karnataka private company
+U72900MH2021PTC123450,400,STRUCK_OFF,Serial ends in 0 — sandbox models a struck-off company
+U65990DL2018PTC336780,400,STRUCK_OFF,Second struck-off case in a different state
+NOTACIN,422,,Not a CIN at all — rejected before any provider call
+U72900MH2021PTC12345,422,,One digit short in the serial
+X72900MH2021PTC123456,422,,Must begin with L or U
+U7290MH2021PTC123456,422,,Only four digits in the industry code
+U72900MH20211PTC123456,422,,Five-digit year

@@ -1,0 +1,40 @@
+# Tunable defaults. Mirrors finagent.settings.Settings.
+
+llm:
+  model: meta-llama/llama-4-scout-17b-16e-instruct
+  # Lower temperature for analysis, higher for teaching.
+  temperature_analysis: 0.2
+  temperature_education: 0.4
+  max_tokens: 2048
+
+retrieval:
+  embedding_model: sentence-transformers/all-MiniLM-L6-v2
+  embedding_dim: 384          # fixed by all-MiniLM-L6-v2
+  chunk_size: 1000            # characters
+  chunk_overlap: 200          # keeps a claim intact across a chunk boundary
+  top_k: 6
+  distance: COSINE
+
+workflow:
+  # How many times the evaluation graph may rewrite a thin query before it
+  # gives up and writes the report from what it has.
+  max_query_rewrites: 2
+  recursion_limit: 15
+  # Tool output shorter than this is treated as noise, not evidence.
+  min_context_chars: 50
+
+market_data:
+  news_cache_ttl_seconds: 300
+  default_symbol: AAPL:NASDAQ
+  max_headlines: 20
+
+documents:
+  # Tried in order; the first extractor returning usable text wins.
+  extractors: [docling, pypdf2, pdfplumber]
+  min_usable_chars: 10
+  max_document_chars: 8000    # cap on text pasted into a single prompt
+
+server:
+  host: 0.0.0.0
+  port: 7860
+  cors_allow_origins: ["*"]   # tighten before any public deployment

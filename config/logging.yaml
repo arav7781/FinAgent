@@ -1,0 +1,41 @@
+# Logging configuration.
+# The service configures logging in code (finagent.app.configure_logging); this
+# file records the intended levels and is the template for a dictConfig setup.
+
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: "%(levelname)s:%(name)s:%(message)s"
+  detailed:
+    format: "%(asctime)s %(levelname)-8s %(name)s: %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: detailed
+    stream: ext://sys.stdout
+
+  # Mirrors records to Socket.IO clients on the `log_stream` channel so a UI can
+  # show agent progress during a long evaluation run.
+  socketio:
+    class: finagent.realtime.SocketIOLogHandler
+    level: INFO
+    formatter: standard
+
+root:
+  level: INFO
+  handlers: [console, socketio]
+
+loggers:
+  finagent.agents:
+    level: INFO      # DEBUG prints full prompts — verbose, but useful when tuning
+  httpx:
+    level: WARNING
+  qdrant_client:
+    level: WARNING
+  sentence_transformers:
+    level: WARNING

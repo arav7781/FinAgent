@@ -1,0 +1,30 @@
+{"message": "What is a mutual fund?", "intent": "education"}
+{"message": "Explain compound interest with a simple example", "intent": "education"}
+{"message": "How does an index fund differ from an ETF?", "intent": "education"}
+{"message": "Teach me what a P/E ratio actually measures", "intent": "education"}
+{"message": "Show me a youtube video about value investing", "intent": "education"}
+{"message": "Any good video explaining SIPs?", "intent": "education"}
+{"message": "What does 'dollar cost averaging' mean?", "intent": "education"}
+{"message": "Why do bond prices fall when interest rates rise?", "intent": "education"}
+{"message": "What does this document say about revenue?", "intent": "document"}
+{"message": "Analyze this startup for me", "intent": "document"}
+{"message": "Summarise the company in this document", "intent": "document"}
+{"message": "Does this document mention the burn rate?", "intent": "document"}
+{"message": "What are the red flags in this pitch deck?", "intent": "document"}
+{"message": "How is the Indian renewable energy sector performing?", "intent": "market"}
+{"message": "Which sectors are outperforming this quarter?", "intent": "market"}
+{"message": "Is the semiconductor market still growing?", "intent": "market"}
+{"message": "Compare the IT and banking sectors in India", "intent": "market"}
+{"message": "What is driving valuations in enterprise SaaS?", "intent": "market"}
+{"message": "Should I invest my savings?", "intent": "strategy"}
+{"message": "How should I allocate a portfolio at moderate risk?", "intent": "strategy"}
+{"message": "I want to build a retirement portfolio, where do I start?", "intent": "strategy"}
+{"message": "How much of my portfolio should sit in equity at 35?", "intent": "strategy"}
+{"message": "Help me set an asset allocation for a five year horizon", "intent": "strategy"}
+{"message": "What's the latest news on Infosys?", "intent": "news"}
+{"message": "Any breaking headlines on Tesla today?", "intent": "news"}
+{"message": "What's happening with Reliance?", "intent": "news"}
+{"message": "Give me the latest updates on Nvidia", "intent": "news"}
+{"message": "Show me today's headlines for HDFC Bank", "intent": "news"}
+{"message": "News on Apple earnings", "intent": "news"}
+{"message": "Latest on the TCS share price", "intent": "news"}

@@ -1,0 +1,49 @@
+# Evaluation dimensions shown on the PDF scorecard.
+#
+# Weights describe how an investor should read the scorecard; the current build
+# renders the baseline scores from finagent.services.charts.SCORECARD. Wiring
+# model-derived scores means replacing that mapping — the dimensions and weights
+# here stay the same.
+
+dimensions:
+  - key: product_strength
+    label: Product Strength
+    weight: 0.20
+    asks: Is the product built, differentiated, and defensible?
+
+  - key: market_size
+    label: Market Size
+    weight: 0.20
+    asks: Is the addressable market large enough to support a venture return?
+
+  - key: team_quality
+    label: Team Quality
+    weight: 0.20
+    asks: Has this team shipped in this domain before?
+
+  - key: business_model
+    label: Business Model
+    weight: 0.15
+    asks: Do the unit economics work at scale?
+
+  - key: competitive_moat
+    label: Competitive Moat
+    weight: 0.15
+    asks: What stops a funded incumbent from copying this in a year?
+
+  - key: execution_risk
+    label: Execution Risk
+    weight: 0.10
+    asks: How much must go right for the plan to hold?
+
+recommendation_bands:
+  - { min: 8.5, verdict: Strong Buy }
+  - { min: 7.0, verdict: Buy }
+  - { min: 5.5, verdict: Hold }
+  - { min: 0.0, verdict: Pass }
+
+compliance_flags:
+  MCA_NOT_VERIFIED:  No CIN was verified against the registry.
+  NAME_MISMATCH:     The registered name differs from the submitted name.
+  NO_DIRECTORS_FOUND: The registry returned no directors for this company.
+  COMPANY_STATUS_STRUCK_OFF: The company is struck off the register.

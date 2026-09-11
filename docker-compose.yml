@@ -15,6 +15,19 @@ services:
       - qdrant
     restart: unless-stopped
 
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        NEXT_PUBLIC_API_BASE_URL: http://localhost:7860
+    ports:
+      - "3000:3000"
+    environment:
+      NEXT_PUBLIC_API_BASE_URL: http://localhost:7860
+    depends_on:
+      - finagent
+    restart: unless-stopped
+
   qdrant:
     image: qdrant/qdrant:latest
     ports:

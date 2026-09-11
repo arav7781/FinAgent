@@ -105,6 +105,17 @@ make install
 make run                    # http://localhost:7860
 ```
 
+In a second terminal, start the investment workspace:
+
+```bash
+make frontend-install
+make frontend-run           # http://localhost:3000
+```
+
+The frontend reads `NEXT_PUBLIC_API_BASE_URL` (defaults to
+`http://localhost:7860`) and connects to every REST endpoint plus the Socket.IO
+agent progress stream.
+
 Interactive API docs: `http://localhost:7860/docs`
 
 Then run the end-to-end example:
@@ -117,7 +128,7 @@ python examples/01_evaluate_startup.py
 ### Docker
 
 ```bash
-docker compose up --build       # FinAgent + Qdrant
+docker compose up --build       # FinAgent + Next.js workspace + Qdrant
 # or
 docker build -t finagent . && docker run -p 7860:7860 --env-file .env finagent
 ```

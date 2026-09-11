@@ -236,6 +236,7 @@ The assessed report — need analysis, technical functionality, architecture,
 usage and scope, and impact — is at
 [`report/FinAgent_Report.pdf`](report/FinAgent_Report.pdf), rebuilt with
 `make report`.
+`make dev`
 
 ---
 

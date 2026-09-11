@@ -21,3 +21,11 @@ outputs/
 .DS_Store
 .idea/
 .vscode/
+
+# Next.js frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env*.local
+frontend/npm-debug.log*
+.tooling/

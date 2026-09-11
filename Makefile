@@ -1,9 +1,11 @@
-.PHONY: help install dev run test lint docker-build docker-run report clean
+.PHONY: help install dev run frontend-install frontend-run frontend-build test lint docker-build docker-run report clean
 
 help:
 	@echo "install       Install runtime dependencies"
 	@echo "dev           Install runtime + development dependencies"
 	@echo "run           Start the API on http://localhost:7860"
+	@echo "frontend-run  Start the Next.js UI on http://localhost:3000"
+	@echo "frontend-build Build the Next.js production bundle"
 	@echo "test          Run the test suite"
 	@echo "lint          Run ruff"
 	@echo "docker-build  Build the container image"
@@ -18,6 +20,15 @@ dev:
 
 run:
 	PYTHONPATH=src uvicorn finagent.app:app --host 0.0.0.0 --port 7860 --reload
+
+frontend-install:
+	cd frontend && npm install
+
+frontend-run:
+	cd frontend && npm run dev
+
+frontend-build:
+	cd frontend && npm run build
 
 test:
 	PYTHONPATH=src pytest -q
